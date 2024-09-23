@@ -1,0 +1,982 @@
+css base: /* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando a seção SOBRE O PROJETO */
+.sobre-projeto {
+    padding: 20px;
+    text-align: center;
+    background-image: url('C:/Users/leand/OneDrive/Documentos/site supersus jcc pagina 2/imagens/fundorasgado1.png'); /* Caminho para a imagem de fundo */
+    background-size: cover; /* A imagem de fundo vai cobrir toda a área da seção */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    height: 100vh; /* Define a altura da seção para 100% da tela */
+    position: relative;
+}
+
+.sobre-projeto h2 {
+    width: 561px;
+    height: 73px;
+    background: url('C:/Users/leand/OneDrive/Documentos/site supersus jcc pagina 2/imagens/image 26.png') no-repeat center center;
+    background-size: contain;
+    text-indent: -9999px; /* Esconde o texto real */
+    margin: 0 auto 20px;
+}
+
+/* Estilizando o conteúdo do texto na parte 'sobre o projeto' */
+.sobre-projeto-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 15px;
+    
+    position: relative;
+    width: 1229px;
+    height: auto;
+    margin: 0 auto; /* Centraliza o conteúdo */
+    background-color: rgba(255, 255, 255, 0.85); /* Fundo branco semi-transparente */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve */
+}
+
+.sobre-projeto-conteudo p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilizando a seção CONHEÇA A EQUIPE */
+.conheca-equipe {
+    margin-top: 80px; /* Move a seção para baixo */
+    padding: 20px;
+    text-align: center;
+    background-color: #f2f2f2; /* Fundo leve */
+}
+
+.conheca-equipe h2 {
+    font-size: 36px;
+    font-weight: bold;
+    background: url('C:/Users/leand/OneDrive/Documentos/site supersus jcc pagina 2/imagens/conheca-a-equipe 1.png') no-repeat center center;
+    background-size: contain;
+    text-indent: -9999px; /* Esconde o texto real */
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: #333;
+}
+
+.sobre-projeto-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 15px;
+    
+    position: relative;
+    width: 1229px;
+    height: auto;
+    margin: 0 auto; /* Centraliza o conteúdo */
+    background-color: rgba(255, 255, 255, 0.85); /* Fundo branco semi-transparente */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve */
+}
+
+/* Estilo da galeria de fotos da equipe */
+.equipe-galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.equipe-galeria img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+}
+
+.equipe-galeria img:hover {
+    transform: scale(1.1); /* Aumenta levemente o tamanho ao passar o mouse */
+    box-shadow: 0px 0px 15px 5px rgba(255, 255, 0, 0.7); /* Efeito de brilho */
+}
+
+/* Setas para passar as fotos da equipe */
+.seta {
+    font-size: 40px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.seta:hover {
+    color: #ffcc00;
+}
+
+/* Espaçamento para evitar conteúdo colado ao fim */
+footer {
+    padding: 50px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    margin-top: 80px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sobre-projeto-conteudo {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .equipe-galeria {
+        gap: 20px;
+    }
+
+    .equipe-galeria img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .seta {
+        font-size: 30px;
+    }
+}
+
+
+html base: 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Exemplo</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!-- Seção Sobre o Projeto -->
+    <div class="sobre-projeto">
+        <h2>SOBRE O PROJETO</h2>
+        <div class="sobre-projeto-conteudo">
+            <p>O jogo é inspirado na conquista do direito à saúde com o Sistema Único de Saúde (SUS), assim o jogador assume o papel de um SUSper herói que enfrenta os desafios da saúde...</p>
+            <p>O objetivo do SUPERSUS é estimular o cidadão a reconhecer seus direitos em saúde e fazer-se valer as camas do SUS.</p>
+        </div>
+    </div>
+
+    <!-- Seção Conheça a Equipe -->
+    <div class="conheca-equipe">
+        <h2>CONHEÇA A EQUIPE</h2>
+        <div class="conheça-equipe-conteudo"></div>
+            <p>O jogo é inspirado na conquista do direito à saúde com o Sistema Único de Saúde (SUS), assim o jogador assume o papel de um SUSper herói que enfrenta os desafios da saúde...</p>
+            <p>O objetivo do SUPERSUS é estimular o cidadão a reconhecer seus direitos em saúde e fazer-se valer as camas do SUS.</p>
+        </div>
+        <div class="seta seta-esquerda">&#10094;</div>
+        <div class="equipe-galeria">
+            <img src="pessoa1.jpg" alt="Pessoa 1">
+            <img src="pessoa2.jpg" alt="Pessoa 2">
+            <img src="pessoa3.jpg" alt="Pessoa 3">
+            <!-- Adicione mais imagens aqui -->
+        </div>
+        <div class="seta seta-direita">&#10095;</div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Projeto desenvolvido por [Seu Nome].</p>
+    </footer>
+
+</body>
+</html>
+
+codigo base cs 4:
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando a seção SOBRE O PROJETO */
+.sobre-projeto {
+    padding: 20px;
+    text-align: center;
+    background-image: url('C:/Users/leand/OneDrive/Documentos/site supersus jcc pagina 2/imagens/fundorasgado1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+.sobre-projeto h2 {
+    width: 561px;
+    height: 73px;
+    background: url('C:/Users/leand/OneDrive/Documentos/site supersus jcc pagina 2/imagens/image 26.png') no-repeat center center;
+    background-size: contain;
+    text-indent: -9999px;
+    margin: 0 auto 20px;
+}
+
+/* Estilizando o conteúdo do texto na parte 'sobre o projeto' */
+.sobre-projeto-conteudo {
+    display: flex;
+    justify-content: space-between; /* Coloca texto e vídeo lado a lado */
+    padding: 20px;
+    width: calc(100% - 6cm); /* 3 cm de cada lado */
+    margin: 0 auto; /* Centraliza a seção */
+}
+
+.texto-sobre-projeto {
+    flex: 1; /* Permite que o texto ocupe o espaço disponível */
+    margin-right: 0.5cm; /* Espaço de 0,5 cm entre texto e vídeo */
+}
+
+.texto-sobre-projeto p {
+    font-size: 18px;
+    color: white; /* Cor do texto */
+    line-height: 1.6;
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-bottom: 15px; /* Espaçamento entre parágrafos */
+}
+
+/* Estilizando a seção SOBRE A EQUIPE */
+.sobre-equipe {
+    margin-top: 80px;
+    padding: 20px;
+    text-align: center;
+    color: white; /* Cor do texto */
+}
+
+.sobre-equipe h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Estilizando a seção CONHEÇA A EQUIPE */
+.conheca-equipe {
+    margin-top: 80px;
+    padding: 20px;
+    text-align: center;
+}
+
+.conheca-equipe h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333; /* Cor do texto */
+}
+
+/* Galeria de fotos da equipe */
+.equipe-galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.equipe-galeria img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+}
+
+.equipe-galeria img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 5px rgba(255, 255, 0, 0.7);
+}
+
+/* Setas para passar as fotos da equipe */
+.seta {
+    font-size: 40px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.seta:hover {
+    color: #ffcc00;
+}
+
+/* Espaçamento para evitar conteúdo colado ao fim */
+footer {
+    padding: 50px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    margin-top: 80px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sobre-projeto-conteudo {
+        flex-direction: column; /* Muda para coluna em telas menores */
+    }
+
+    .texto-sobre-projeto {
+        margin-right: 0; /* Remove margem */
+        margin-bottom: 20px; /* Adiciona margem inferior */
+    }
+
+    .equipe-galeria {
+        gap: 20px;
+    }
+
+    .equipe-galeria img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .seta {
+        font-size: 30px;
+    }
+}
+
+codigo base ht 4 - p ficar igual ao do cs - :
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Exemplo</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!-- Seção Sobre o Projeto -->
+    <div class="sobre-projeto">
+        <h2>SOBRE O PROJETO</h2>
+        <div class="sobre-projeto-conteudo">
+            <div class="texto-sobre-projeto">
+                <p>O jogo é inspirado na conquista do direito à saúde com o Sistema Único de Saúde (SUS), assim o jogador assume o papel de um SUSper herói que enfrenta os desafios da saúde.</p>
+                <p>O objetivo do SUPERSUS é estimular o cidadão a reconhecer seus direitos em saúde e fazer-se valer as camas do SUS.</p>
+                <p>Essa experiência visa educar e engajar os cidadãos em suas responsabilidades com a saúde pública.</p>
+            </div>
+            <div class="video-sobre-projeto">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/seu_video_id" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção Sobre a Equipe -->
+    <div class="sobre-equipe">
+        <h2>SOBRE A EQUIPE</h2>
+        <p style="text-align: center; color: white;">Nossa equipe é composta por profissionais dedicados e apaixonados pela saúde pública e pela educação.</p>
+    </div>
+
+    <!-- Seção Conheça a Equipe -->
+    <div class="conheca-equipe">
+        <h2>CONHEÇA A EQUIPE</h2>
+        <div class="equipe-galeria">
+            <img src="pessoa1.jpg" alt="Pessoa 1">
+            <img src="pessoa2.jpg" alt="Pessoa 2">
+            <img src="pessoa3.jpg" alt="Pessoa 3">
+            <div class="seta seta-esquerda">&#10094;</div>
+            <div class="seta seta-direita">&#10095;</div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Projeto desenvolvido por [Seu Nome].</p>
+    </footer>
+
+</body>
+</html>
+
+CODIGO BASE HT 5:
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Exemplo</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!-- Seção Sobre o Projeto -->
+    <div class="sobre-projeto">
+        <h2>SOBRE O PROJETO</h2>
+        <div class="sobre-projeto-conteudo">
+            <div class="texto">
+                <p><strong>O jogo é inspirado na conquista do direito à saúde com o Sistema Único de Saúde (SUS), assim o jogador assume o papel do SUS e percorre trajetórias de lutas e conquistas.</strong></p>
+                <p><strong>Em um passeio pela rede de saúde, cada fase do jogo envolve atividades que são ofertadas como serviços e/ou programas do SUS, cada desafio cumprido o jogador vai acumulando conquistas e alcançando objetivos do desenvolvimento sustentável - ODS (com dimensões ambientais, sociais e econômicas).</strong></p>
+                <p><strong>O objetivo do SUPERSUS é estimular o cidadão a reconhecer seus direitos em saúde e fazê-lo vestir a camisa do SUS.</strong></p>
+            </div>
+            <video controls src="video.mp4"></video>
+        </div>
+    </div>
+
+    <!-- Seção Sobre a Equipe -->
+    <div class="sobre-equipe">
+        <h2>SOBRE A EQUIPE</h2>
+        <p style="color: white;">A equipe do projeto é formada por profissionais dedicados e comprometidos com a saúde e bem-estar da população.</p>
+    </div>
+
+    <!-- Seção Conheça a Equipe -->
+    <div class="conheca-equipe">
+        <h2>CONHEÇA A EQUIPE</h2>
+        <div class="equipe-galeria">
+            <!-- Adicione imagens da equipe aqui -->
+            <img src="equipe1.jpg" alt="Membro da equipe">
+            <img src="equipe2.jpg" alt="Membro da equipe">
+            <img src="equipe3.jpg" alt="Membro da equipe">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+codigo base cs 5:
+
+
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando a seção SOBRE O PROJETO */
+.sobre-projeto {
+    padding: 20px;
+    text-align: center;
+    background-image: url('C:/Users/leand/OneDrive/Documentos/site supersus jcc pagina 2/imagens/fundorasgado1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+.sobre-projeto h2 {
+    width: 561px;
+    height: 73px;
+    background: url('C:/Users/leand/OneDrive/Documentos/site supersus jcc pagina 2/imagens/image 26.png') no-repeat center center;
+    background-size: contain;
+    text-indent: -9999px;
+    margin: 0 auto 20px;
+}
+
+/* Estilizando o conteúdo do texto na parte 'sobre o projeto' */
+.sobre-projeto-conteudo {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaçamento entre texto e vídeo */
+    padding: 20px;
+    margin: 0 2.5cm;
+}
+
+.texto {
+    text-align: left; /* Alinhando texto à esquerda */
+}
+
+.texto p {
+    font-size: 16px; /* Diminua o tamanho do texto */
+    color: #fff; /* Cor do texto */
+    line-height: 1.6;
+    margin-bottom: 0.7cm; /* Espaçamento entre parágrafos */
+}
+
+.sobre-projeto-conteudo video {
+    width: calc(100% + 0.7cm); /* Aumentar a largura do vídeo */
+    height: calc(100% - 0.1cm); /* Altura do vídeo quase igual ao texto */
+    max-height: 90%; /* Aumentando a altura para ficar quase do mesmo tamanho dos parágrafos */
+    align-self: center; /* Alinha o vídeo no meio */
+}
+
+/* Estilizando a seção SOBRE A EQUIPE */
+.sobre-equipe {
+    margin-top: 80px;
+    padding: 20px;
+    text-align: center;
+    background-color: #333; /* Cor de fundo */
+}
+
+.sobre-equipe h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Estilizando a seção CONHEÇA A EQUIPE */
+.conheca-equipe {
+    margin-top: 80px;
+    padding: 20px;
+    text-align: center;
+    background-image: url('C:/Users/leand/OneDrive/Documentos/site supersus jcc pagina 2/imagens/Rectangle 16.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.conheca-equipe h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Galeria de fotos da equipe */
+.equipe-galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.equipe-galeria img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+}
+
+.equipe-galeria img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 5px rgba(255, 255, 0, 0.7);
+}
+
+/* Espaçamento para evitar conteúdo colado ao fim */
+footer {
+    padding: 50px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    margin-top: 80px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sobre-projeto-conteudo {
+        flex-direction: column; /* Para dispositivos menores */
+    }
+
+    .sobre-projeto-conteudo video {
+        width: 100%; /* Ajustar o vídeo */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+TEXTO BASE 7 CS: 
+
+
+
+
+
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando a seção SOBRE O PROJETO */
+.sobre-projeto {
+    padding: 20px;
+    text-align: center;
+    background-image: url('C:/Users/leand/OneDrive/Documentos/site supersus jcc pagina 2/imagens/fundorasgado1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+.sobre-projeto h2 {
+    width: 561px;
+    height: 73px;
+    background: url('C:/Users/leand/OneDrive/Documentos/site supersus jcc pagina 2/imagens/image 26.png') no-repeat center center;
+    background-size: contain;
+    text-indent: -9999px;
+    margin: 0 auto 20px;
+}
+
+/* Estilizando o conteúdo do texto na parte 'sobre o projeto' */
+.sobre-projeto-conteudo {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaçamento entre texto e vídeo */
+    padding: 40px;
+    margin: 0 2.5cm;
+}
+
+.texto {
+    text-align: left; /* Alinhando texto à esquerda */
+}
+
+.texto p {
+    font-size: 16px; /* Tamanho do texto */
+    color: #fff; /* Cor do texto */
+    line-height: 1.6;
+    margin-bottom: 0.7cm; /* Espaçamento entre parágrafos */
+    font-weight: bold; /* Deixando o texto em negrito */
+}
+
+.sobre-projeto-conteudo video {
+    width: 1400px; /* Largura do vídeo */
+    height: 210px; /* Altura do vídeo */
+    max-height: 90%; /* Altura para ficar quase do mesmo tamanho dos parágrafos */
+    align-self: center; /* Alinha o vídeo no meio */
+    border-radius: 15px; /* Bordas arredondadas */
+    margin-left: 0.7cm; /* Espaço de 0.3cm à esquerda */
+}
+
+/* Estilizando a seção SOBRE A EQUIPE */
+.sobre-equipe {
+    margin-top: 80px;
+    padding: 20px;
+    text-align: center;
+    background-color: #333; /* Cor de fundo */
+}
+
+.sobre-equipe h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Estilizando a seção CONHEÇA A EQUIPE */
+.conheca-equipe {
+    margin-top: 80px;
+    padding: 20px;
+    text-align: center;
+    background-image: url('C:/Users/leand/OneDrive/Documentos/site supersus jcc pagina 2/imagens/Rectangle 16.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.conheca-equipe h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Galeria de fotos da equipe */
+.equipe-galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.equipe-galeria img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+}
+
+.equipe-galeria img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 5px rgba(255, 255, 0, 0.7);
+}
+
+/* Espaçamento para evitar conteúdo colado ao fim */
+footer {
+    padding: 50px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    margin-top: 80px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sobre-projeto-conteudo {
+        flex-direction: column; /* Para dispositivos menores */
+    }
+
+    .sobre-projeto-conteudo video {
+        width: 100%; /* Ajustar o vídeo */
+    }
+}
+
+
+
+
+
+
+
+TEXTO BASE HT 7:
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Exemplo</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!-- Seção Sobre o Projeto -->
+    <div class="sobre-projeto">
+        <h2>SOBRE O PROJETO</h2>
+        <div class="sobre-projeto-conteudo">
+            <div class="texto">
+                <p><strong>O jogo é inspirado na conquista do direito à saúde com o Sistema Único de Saúde (SUS), assim o jogador assume o papel do SUS e percorre trajetórias de lutas e conquistas.</strong></p>
+                <p><strong>Em um passeio pela rede de saúde, cada fase do jogo envolve atividades que são ofertadas como serviços e/ou programas do SUS, cada desafio cumprido o jogador vai acumulando conquistas e alcançando objetivos do desenvolvimento sustentável - ODS (com dimensões ambientais, sociais e econômicas).</strong></p>
+                <p><strong>O objetivo do SUPERSUS é estimular o cidadão a reconhecer seus direitos em saúde e fazê-lo vestir a camisa do SUS.</strong></p>
+            </div>
+            <video controls src="video.mp4"></video>
+        </div>
+    </div>
+
+    <!-- Seção Sobre a Equipe -->
+    <div class="sobre-equipe">
+        <h2>SOBRE A EQUIPE</h2>
+        <p style="color: white;">A equipe do projeto é formada por profissionais dedicados e comprometidos com a saúde e bem-estar da população.</p>
+    </div>
+
+    <!-- Seção Conheça a Equipe -->
+    <div class="conheca-equipe">
+        <h2>CONHEÇA A EQUIPE</h2>
+        <div class="equipe-galeria">
+            <!-- Adicione imagens da equipe aqui -->
+            <img src="equipe1.jpg" alt="Membro da equipe">
+            <img src="equipe2.jpg" alt="Membro da equipe">
+            <img src="equipe3.jpg" alt="Membro da equipe">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+CSS CODIGO BASE 8:
+
+
+
+
+
+
+
+
+
+
+
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando o fundo comum */
+body {
+    background-image: url('C:/Users/leand/OneDrive/Documentos/site supersus jcc pagina 2/imagens/Rectangle 16.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Estilizando a seção SOBRE O PROJETO */
+.sobre-projeto {
+    padding: 20px;
+    text-align: center;
+    background-image: url('C:/Users/leand/OneDrive/Documentos/site supersus jcc pagina 2/imagens/fundorasgado1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+}
+
+.sobre-projeto h2 {
+    width: 561px;
+    height: 73px;
+    background: url('C:/Users/leand/OneDrive/Documentos/site supersus jcc pagina 2/imagens/image 26.png') no-repeat center center;
+    background-size: contain;
+    text-indent: -9999px;
+    margin: 0 auto 20px;
+}
+
+/* Estilizando o conteúdo do texto na parte 'sobre o projeto' */
+.sobre-projeto-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    margin: 0 2.5cm;
+}
+
+.texto {
+    text-align: left;
+}
+
+.texto p {
+    font-size: 16px; /* Tamanho original */
+    color: #fff;
+    line-height: 1.6;
+    margin-bottom: 0.7cm;
+    font-weight: bold;
+}
+
+.sobre-projeto-conteudo video {
+    width: 1400px;
+    height: 210px;
+    max-height: 90%;
+    align-self: center;
+    border-radius: 15px;
+    margin-left: 0.7cm;
+}
+
+/* Estilizando a seção CONHECA A EQUIPE */
+.conheca-equipe {
+    padding: 90px;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.conheca-equipe h2 {
+    width: 561px; /* Largura do título */
+    height: 60px; /* Altura do título */
+    background: url('C:/Users/leand/OneDrive/Documentos/site supersus jcc pagina 2/imagens/conheca-a-equipe 1.png') no-repeat center center; /* Imagem de fundo */
+    background-size: contain; /* Ajustar a imagem de fundo */
+    text-indent: -9999px; /* Remover texto visível */
+    margin: 0 auto 0.3cm; /* Centralizar e distância do título */
+}
+
+/* Estilo para os parágrafos */
+.conheca-equipe .texto {
+    margin: 0 auto;
+    padding-left: 5cm;
+    padding-right: 5cm;
+    color: #fff;
+    text-align: center; /* Centralizando os parágrafos */
+}
+
+.conheca-equipe .texto p {
+    font-size: 20px; /* Aumente o tamanho da fonte aqui */
+    margin-bottom: 0.1cm; /* Espaço entre parágrafos */
+}
+
+.conheca-equipe .texto p:first-child {
+    font-weight: bold; /* Somente o primeiro parágrafo em negrito */
+}
+
+.conheca-equipe .texto p:last-child {
+    font-weight: normal; /* Segundo parágrafo não negrito */
+}
+
+.conheca-equipe {
+    margin-bottom: 3.5cm; /* Distância para a próxima seção */
+}
+
+/* Espaçamento para evitar conteúdo colado ao fim */
+footer {
+    padding: 50px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    margin-top: 80px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sobre-projeto-conteudo {
+        flex-direction: column;
+    }
+
+    .sobre-projeto-conteudo video {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+HTML CODIGO BASE 8:
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Exemplo</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!-- Seção Sobre o Projeto -->
+    <div class="sobre-projeto">
+        <h2>SOBRE O PROJETO</h2>
+        <div class="sobre-projeto-conteudo">
+            <div class="texto">
+                <p><strong>O jogo é inspirado na conquista do direito à saúde com o Sistema Único de Saúde (SUS), assim o jogador assume o papel do SUS e percorre trajetórias de lutas e conquistas.</strong></p>
+                <p><strong>Em um passeio pela rede de saúde, cada fase do jogo envolve atividades que são ofertadas como serviços e/ou programas do SUS, cada desafio cumprido o jogador vai acumulando conquistas e alcançando objetivos do desenvolvimento sustentável - ODS (com dimensões ambientais, sociais e econômicas).</strong></p>
+                <p><strong>O objetivo do SUPERSUS é estimular o cidadão a reconhecer seus direitos em saúde e fazê-lo vestir a camisa do SUS.</strong></p>
+            </div>
+            <video controls src="video.mp4"></video>
+        </div>
+    </div>
+
+    <section class="conheca-equipe">
+        <h2>Conheça a Equipe</h2>
+        <div class="texto">
+            <p style="font-weight: bold;">São todos idealistas, acreditam que é possível um país mais justo, menos desigual e mais humano e para isso a diminuição na desigualdade do acesso às informações é fundamental.</p>
+            <p>A equipe Comunica faz parte do Grupo de pesquisa Saberes e Práticas em Saúde coordenado por Islândia Carvalho Sousa na Fiocruz Pernambuco, tem como objetivo realizar a tradução das informações no campo da saúde pública em linguagem mais simples por meio de tecnologias mais acessíveis para o público em geral (não especialista na saúde pública).</p>
+        </div>
+    </section>
+    
+    <div class="equipe-atual">
+        <h2>Equipe Atual</h2>
+        <div class="equipe-galeria">
+            <img src="caminho_da_imagem1.jpg" alt="Membro 1">
+            <img src="caminho_da_imagem2.jpg" alt="Membro 2">
+            <img src="caminho_da_imagem3.jpg" alt="Membro 3">
+            <!-- Adicione mais imagens conforme necessário -->
+        </div>
+    </div>
+    
+
+    <footer>
+        <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
